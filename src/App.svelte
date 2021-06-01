@@ -1,11 +1,11 @@
 <script lang="ts">
     import Navbar from "./Navbar.svelte";
-    import Home from "./Home.svelte";
+    import Products from "./Products.svelte";
     import DataEntry from "./DataEntry.svelte";
     import Router from "svelte-spa-router";
 
     const routes = {
-        "/home": Home,
+        "/home": Products,
         "/dataentry": DataEntry,
     };
 
