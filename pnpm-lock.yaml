@@ -13,8 +13,12 @@ specifiers:
   prettier: ^2.3.0
   svelte: ^3.37.0
   svelte-preprocess: ^4.7.2
+  svelte-seo: ^1.2.1
   typescript: ^4.2.4
   vite: ^2.3.4
+
+dependencies:
+  svelte-seo: 1.2.1_typescript@4.2.4
 
 devDependencies:
   '@sveltejs/vite-plugin-svelte': 1.0.0-next.10_svelte@3.38.2+vite@2.3.4
@@ -1329,6 +1333,14 @@ packages:
       queue-microtask: 1.2.3
     dev: true
 
+  /schema-dts/0.8.2_typescript@4.2.4:
+    resolution: {integrity: sha512-whRg7QF9wmPfrwAi4NRT/bjMBIdHvzpr4excNN00hn+U2aFXx9NB3JKfooUMJLDqpGEqnZpA61f5muw9lQ50ZA==}
+    peerDependencies:
+      typescript: '>=3.4.0'
+    dependencies:
+      typescript: 4.2.4
+    dev: false
+
   /semver/5.7.1:
     resolution: {integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==}
     hasBin: true
@@ -1503,6 +1515,14 @@ packages:
       svelte: 3.38.2
       typescript: 4.2.4
     dev: true
+
+  /svelte-seo/1.2.1_typescript@4.2.4:
+    resolution: {integrity: sha512-e1N1MSgct4y0XYUzWEgBy5zdlmfGAC8qn4RuL6n7tjSrl3qr7w0bY8Nv40Vbnv+UaejL7VlX9QQGjzFnSPZ2DQ==}
+    dependencies:
+      schema-dts: 0.8.2_typescript@4.2.4
+    transitivePeerDependencies:
+      - typescript
+    dev: false
 
   /svelte/3.38.2:
     resolution: {integrity: sha512-q5Dq0/QHh4BLJyEVWGe7Cej5NWs040LWjMbicBGZ+3qpFWJ1YObRmUDZKbbovddLC9WW7THTj3kYbTOFmU9fbg==}
