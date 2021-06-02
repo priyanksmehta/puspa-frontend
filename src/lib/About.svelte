@@ -2,5 +2,5 @@
 </script>
 
 <template>
-    <div>Data Entry</div>
+    <div>About</div>
 </template>
