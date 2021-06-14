@@ -101,7 +101,7 @@
 <template>
     <div class="pt-32 pl-80">
         <div class="flex">
-            <div class="ml-8 w-6/12 text-3xl font-sans">
+            <div class="ml-8 mr-40 w-6/12 text-3xl font-sans">
                 <b>Product List</b>
             </div>
             <div class="my-auto border border-gray-900">
@@ -145,7 +145,7 @@
             <div class="container flex mt-8 bg-white">
                 <div
                     class="align-middle my-auto mx-6 p-4 border-r-[1px] border-gray-300">
-                    <img class="" src="ci.png" alt="logo" />
+                    <img class="" src="ptkarimun.png" alt="logo" />
                 </div>
                 <div class="py-6 w-7/12">
                     <div>
@@ -156,7 +156,7 @@
                             {product.origin}
                         </span>
                     </div>
-                    <div>
+                    <div class="text-lg">
                         {product.source}
                     </div>
                     <div>

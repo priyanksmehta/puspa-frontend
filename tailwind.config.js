@@ -7,6 +7,10 @@ module.exports = {
             backgroundColor: {
                 "cart-button": "#67c529",
             },
+            backgroundImage: {
+                "flower-pattern":
+                    "linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url(patchouli.jpg)",
+            },
         },
     },
     variants: {
