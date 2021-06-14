@@ -1,3 +1,3 @@
 <template>
-    <img class="" src="/banner.png" alt="home banner" />
+    <img class="pt-32" src="/banner.png" alt="home banner" />
 </template>

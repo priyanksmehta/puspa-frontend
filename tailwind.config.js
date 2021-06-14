@@ -2,7 +2,13 @@ module.exports = {
     mode: "jit",
     purge: ["src/**/*.{svelte,ts,js,json}"],
     darkMode: false, // or 'media' or 'class'
-    theme: {},
+    theme: {
+        extend: {
+            backgroundColor: {
+                "cart-button": "#67c529",
+            },
+        },
+    },
     variants: {
         extend: {},
     },
