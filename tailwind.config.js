@@ -1,11 +1,12 @@
 module.exports = {
     mode: "jit",
-    purge: ["src/**/*.{svelte,ts,js,json}"],
+    purge: ["src/**/*.{svelte,ts,js,json,svg}"],
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
             backgroundColor: {
                 "cart-button": "#67c529",
+                "website-background": "#d2ffc7",
             },
             backgroundImage: {
                 "flower-pattern":
