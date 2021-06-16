@@ -1,19 +1,10 @@
 <script lang="ts">
     import { onMount } from "svelte";
-    import { text } from "svelte/internal";
+    import ProductCard from "./components/ProductCard.svelte";
+    import UpArrow from "./components/icons/up_arrow.svelte";
+    import DownArrow from "./components/icons/down_arrow.svelte";
 
-    interface ProductResponse {
-        status: Boolean;
-        data: Product[];
-    }
-
-    interface Product {
-        product: string;
-        source: string;
-        tag: string;
-        origin: string;
-        logo: string;
-    }
+    import type { Product, ProductResponse } from "./Datatypes.svelte";
 
     let products: Product[] = [],
         sources: string[] = [],
@@ -44,6 +35,30 @@
         const data = await fetch("http://192.168.1.19:5000/shop/products");
         const products: ProductResponse = await data.json();
         return products.data;
+    }
+
+    function sortAscending() {
+        products = products.sort((a, b) => {
+            if (a.product < b.product) {
+                return -1;
+            }
+            if (a.product > b.product) {
+                return 1;
+            }
+            return a.source < b.source ? -1 : 1;
+        });
+    }
+
+    function sortDescending() {
+        products = products.sort((a, b) => {
+            if (a.product > b.product) {
+                return -1;
+            }
+            if (a.product < b.product) {
+                return 1;
+            }
+            return a.source > b.source ? -1 : 1;
+        });
     }
 
 </script>
@@ -98,7 +113,7 @@
         {/each}
     </div> -->
 
-<template>
+<!-- <template>
     <div class="pt-32 pl-80">
         <div class="flex">
             <div class="ml-8 mr-40 w-6/12 text-3xl font-sans">
@@ -174,4 +189,43 @@
             </div>
         {/each}
     </div>
-</template>
+</template> -->
+
+<div class="pt-40 grid grid-cols-[0.7fr,1.4fr,0.7fr] bg-website-background">
+    <div class="ml-40">
+        <div>Companies</div>
+        {#each sources as source}
+            <div>
+                <input type="checkbox" />
+                {source}
+            </div>
+        {/each}
+        <div>Tags</div>
+    </div>
+    <div>
+        <div class="flex items-center">
+            <div class="w-5/12 text-3xl"><b>Product List</b></div>
+            <div class="">
+                <input
+                    class="border-black border"
+                    type="text"
+                    placeholder="Search" />
+            </div>
+            <div class="mx-2.5">Sort by:</div>
+            <div>
+                <button on:click={sortAscending}>
+                    <UpArrow />
+                </button>
+            </div>
+            <div>
+                <button on:click={sortDescending}>
+                    <DownArrow />
+                </button>
+            </div>
+        </div>
+        <div>
+            <ProductCard {products} />
+        </div>
+    </div>
+    <div />
+</div>
