@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <nav class="fixed w-full left-0 top-0 bg-white">
+    <nav class="fixed w-full left-0 top-0 bg-white z-50">
         <div class="flex">
             <div class="items-center m-6 mr-auto">
                 <a href={"/home"} use:link>

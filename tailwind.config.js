@@ -7,6 +7,7 @@ module.exports = {
             backgroundColor: {
                 "cart-button": "#67c529",
                 "website-background": "#d3ffd5",
+                "footer-background": "#323748",
             },
             textColor: {
                 "main-theme": "#67c529",

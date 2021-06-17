@@ -1,11 +1,12 @@
 <script lang="ts">
-    import Navbar from "./lib/Navbar.svelte";
+    import Navbar from "./lib/components/Navbar.svelte";
     import Products from "./lib/Products.svelte";
     import About from "./lib/About.svelte";
     import Home from "./lib/components/Home/Home.svelte";
     import Router from "svelte-spa-router";
     import FAQ from "./lib/FAQ.svelte";
     import Static from "./lib/Static.svelte";
+    import Footer from "./lib/components/Footer.svelte";
 
     const routes = {
         "/products": Products,
@@ -26,4 +27,5 @@
 <body>
     <Navbar />
     <Router {routes} />
+    <footer><Footer /></footer>
 </body>
