@@ -8,6 +8,12 @@ module.exports = {
                 "cart-button": "#67c529",
                 "website-background": "#d3ffd5",
             },
+            textColor: {
+                "main-theme": "#67c529",
+            },
+            borderColor: {
+                "main-theme": "#67c529",
+            },
             backgroundImage: {
                 "flower-pattern":
                     "linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url(patchouli.jpg)",
