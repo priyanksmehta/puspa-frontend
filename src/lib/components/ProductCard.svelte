@@ -1,11 +1,11 @@
 <script lang="ts">
     import type { Product } from "../Datatypes.svelte";
-    export let products: Product[];
+    export let displayProducts: Product[];
 
 </script>
 
 <div>
-    {#each products as product}
+    {#each displayProducts as product}
         <div class="flex mt-8">
             <div
                 class="align-middle my-auto p-4 border-r-[1px] border-gray-300">

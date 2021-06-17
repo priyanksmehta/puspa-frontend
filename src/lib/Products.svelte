@@ -13,17 +13,21 @@
         selectedTags: string[] = [],
         displayProducts: Product[];
 
-    $: displayProducts = products.filter((p) => {
-        const isAllSources = selectedSources.length === 0;
-        const isAllTags = selectedTags.length === 0;
-        const isSelectedSource = selectedSources.includes(p.source);
-        const isSelectedTag = selectedTags.includes(p.tag);
-        if (isAllSources && isAllTags) return true;
-        if (isAllSources && isSelectedTag) return true;
-        if (isAllTags && isSelectedSource) return true;
-        if (isSelectedTag && isSelectedSource) return true;
-        return false;
-    });
+    $: displayProducts = products
+        .filter((p) => {
+            const isAllSources = selectedSources.length === 0;
+            const isAllTags = selectedTags.length === 0;
+            const isSelectedSource = selectedSources.includes(p.source);
+            const isSelectedTag = selectedTags.includes(p.tag);
+            if (isAllSources && isAllTags) return true;
+            if (isAllSources && isSelectedTag) return true;
+            if (isAllTags && isSelectedSource) return true;
+            if (isSelectedTag && isSelectedSource) return true;
+            return false;
+        })
+        .filter(
+            (item) => item.product.toLowerCase().indexOf(searchTerm) !== -1
+        );
 
     onMount(async () => {
         products = await getProducts();
@@ -60,6 +64,8 @@
             return a.source > b.source ? -1 : 1;
         });
     }
+
+    let searchTerm = "";
 
 </script>
 
@@ -209,7 +215,8 @@
                 <input
                     class="border-black border"
                     type="text"
-                    placeholder="Search" />
+                    placeholder="Search"
+                    bind:value={searchTerm} />
             </div>
             <div class="mx-2.5">Sort by:</div>
             <div>
@@ -224,7 +231,7 @@
             </div>
         </div>
         <div>
-            <ProductCard {products} />
+            <ProductCard {displayProducts} />
         </div>
     </div>
     <div />
