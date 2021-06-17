@@ -5,6 +5,7 @@
     import DownArrow from "./components/icons/down_arrow.svelte";
 
     import type { Product, ProductResponse } from "./Datatypes.svelte";
+    import { each } from "svelte/internal";
 
     let products: Product[] = [],
         sources: string[] = [],
@@ -202,11 +203,20 @@
         <div>Companies</div>
         {#each sources as source}
             <div>
-                <input type="checkbox" />
+                <input
+                    type="checkbox"
+                    bind:group={selectedSources}
+                    value={source} />
                 {source}
             </div>
         {/each}
         <div>Tags</div>
+        {#each tags as tag}
+            <div>
+                <input type="checkbox" bind:group={selectedTags} value={tag} />
+                {tag}
+            </div>
+        {/each}
     </div>
     <div>
         <div class="flex items-center">
