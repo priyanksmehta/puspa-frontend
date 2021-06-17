@@ -6,7 +6,7 @@ module.exports = {
         extend: {
             backgroundColor: {
                 "cart-button": "#67c529",
-                "website-background": "#d2ffc7",
+                "website-background": "#d3ffd5",
             },
             backgroundImage: {
                 "flower-pattern":
