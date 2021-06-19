@@ -3,7 +3,7 @@
 
 </script>
 
-<div class="grid grid-cols-2 items-center my-10">
+<div class="grid grid-cols-[auto,1fr] items-center my-10">
     <div class="relative inline-block ml-40 m-3 overflow-hidden">
         <img
             class="block duration-500 ease-in-out transform hover:scale-125"
