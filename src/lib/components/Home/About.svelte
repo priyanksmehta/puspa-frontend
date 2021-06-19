@@ -4,9 +4,9 @@
 </script>
 
 <div class="grid grid-cols-2 items-center my-10">
-    <div class="ml-40">
+    <div class="relative inline-block ml-40 m-3 overflow-hidden">
         <img
-            class="transform duration-500 hover:scale-125 overflow-hidden"
+            class="block duration-500 ease-in-out transform hover:scale-125"
             src="/about_us.png"
             alt="about" />
     </div>

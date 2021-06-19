@@ -1,5 +1,6 @@
-<div class="grid grid-cols-3 bg-footer-background text-white">
-    <div class="ml-52">
+<div
+    class="grid grid-cols-2 bg-footer-background justify-items-center text-white">
+    <div class="ml-52 mr-40">
         <div class="mb-5 mt-10">Stay Posted</div>
         <div class="text-[#9ca1b2]">
             Subscribe to our newsletter to receive updates on new launches
@@ -15,8 +16,7 @@
         </div>
         <div class="mt-10">© 2021 Puspa. All Rights Reserved.</div>
     </div>
-    <div class="text-center mt-10">Explore</div>
-    <div class="mr-40 mt-10 mb-10">
+    <div class="mt-10 mb-10">
         <div>Drop us a line</div>
         <br />
         <div class="text-[#9ca1b2]">
