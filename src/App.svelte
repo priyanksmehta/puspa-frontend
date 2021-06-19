@@ -24,8 +24,8 @@
     <link rel="icon" href="/logo.png" />
 </svelte:head>
 
-<body>
+<div class="grid grid-rows-[auto, 1fr, auto] min-h-screen">
     <Navbar />
     <Router {routes} />
-    <footer><Footer /></footer>
-</body>
+    <Footer />
+</div>
