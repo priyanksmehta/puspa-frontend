@@ -37,7 +37,7 @@
     });
 
     async function getProducts() {
-        const data = await fetch("http://192.168.1.19:5000/shop/products");
+        const data = await fetch("http://192.168.1.35:5000/shop/products");
         const products: ProductResponse = await data.json();
         return products.data;
     }
@@ -70,7 +70,7 @@
 
 </script>
 
-<div class="pt-40 grid grid-cols-[0.7fr,1.4fr,0.7fr] bg-website-background">
+<div class="pt-40 grid grid-cols-[40%,60%] bg-website-background">
     <div class="ml-40">
         <div class="">
             <input

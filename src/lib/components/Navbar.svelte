@@ -1,5 +1,6 @@
 <script lang="ts">
     import { link } from "svelte-spa-router";
+    import User from "./icons/user.svelte";
 
 </script>
 
@@ -35,7 +36,7 @@
             <!-- Update route to user account if logged in, login page if not -->
             <div class="m-7 pt-5">
                 <a href={"/home"} use:link>
-                    <img class="" src="/user.svg" alt="user icon" />
+                    <User />
                 </a>
             </div>
         </div>
