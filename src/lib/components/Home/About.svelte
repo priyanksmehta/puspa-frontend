@@ -1,6 +1,5 @@
 <script>
     import { link } from "svelte-spa-router";
-
 </script>
 
 <div class="grid grid-cols-[auto,1fr] items-center my-10">

@@ -1,4 +1,4 @@
-<div class="grid lg:grid-cols-[20%,60%,20%] md:grid-cols-3 pt-20">
+<div class="grid lg:grid-cols-[7.5%,85%,7.5%] md:grid-cols-3 pt-20">
     <div />
     <div class="grid grid-cols-4 text-lg">
         <div
@@ -7,7 +7,8 @@
         </div>
         <div
             class="border-r-[1px] border-b-[1px] border-work-with-us border-opacity-20">
-            <div class="p-5 m-5 flex">
+            <div class="p-5 m-5">
+                <span class="dot" />
                 <span>Diverse Product Range</span>
             </div>
         </div>
@@ -30,8 +31,7 @@
             class="border-r-[1px] border-b-[1px] border-work-with-us border-opacity-20">
             <div class="p-5 m-5">Premium Quality Products</div>
         </div>
-        <div
-            class="border-r-[1px] border-b-[1px] border-work-with-us border-opacity-20">
+        <div class="border-b-[1px] border-work-with-us border-opacity-20">
             <div class="p-5 m-5">Best Global Shipping Rates</div>
         </div>
         <div
@@ -52,3 +52,13 @@
     </div>
     <div />
 </div>
+
+<style>
+    .dot {
+        height: 7px;
+        width: 7px;
+        background-color: #67c529;
+        border-radius: 50%;
+        display: inline-block;
+    }
+</style>
