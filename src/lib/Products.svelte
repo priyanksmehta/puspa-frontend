@@ -37,7 +37,7 @@
     });
 
     async function getProducts() {
-        const data = await fetch("http://192.168.1.35:5000/shop/products");
+        const data = await fetch("https://puspagroup.com/api/shop/products");
         const products: ProductResponse = await data.json();
         return products.data;
     }
@@ -67,7 +67,6 @@
     }
 
     let searchTerm = "";
-
 </script>
 
 <div class="pt-40 grid grid-cols-[40%,60%] bg-website-background">

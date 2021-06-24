@@ -1,7 +1,7 @@
 <script lang="ts">
     import Navbar from "./lib/components/Navbar.svelte";
     import Products from "./lib/Products.svelte";
-    import About from "./lib/About.svelte";
+    import About from "./lib/components/About/About.svelte";
     import Home from "./lib/components/Home/Home.svelte";
     import Router from "svelte-spa-router";
     import FAQ from "./lib/FAQ.svelte";
