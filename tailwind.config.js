@@ -1,3 +1,5 @@
+const { readBuilderProgram } = require("typescript");
+
 module.exports = {
     mode: "jit",
     purge: ["src/**/*.{svelte,ts,js,json,svg}"],
@@ -14,6 +16,7 @@ module.exports = {
             },
             borderColor: {
                 "main-theme": "#67c529",
+                "work-with-us": "#979797",
             },
             backgroundImage: {
                 "flower-pattern":
