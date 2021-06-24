@@ -27,7 +27,9 @@
             return false;
         })
         .filter(
-            (item) => item.product.toLowerCase().indexOf(searchTerm) !== -1
+            (item) =>
+                item.product.toLowerCase().indexOf(searchTerm.toLowerCase()) !==
+                -1
         );
 
     onMount(async () => {
