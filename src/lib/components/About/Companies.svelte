@@ -129,7 +129,7 @@
     <div class="relative inline-block overflow-hidden">
         <img
             class="block duration-500 ease-in-out transform hover:scale-125"
-            src="daiwik_companies.png"
+            src="daiwik_companies.jpg"
             alt="daiwik companies" />
     </div>
 </div>
