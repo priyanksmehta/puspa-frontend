@@ -15,18 +15,18 @@
     ];
 </script>
 
-<div class="grid lg:grid-cols-[10%,80%,10%] pt-20">
+<div class="grid lg:grid-cols-[20%,60%,20%] pt-20">
     <div />
-    <div class="grid lg:grid-cols-4 md:grid-cols-3 text-lg">
+    <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 text-lg">
         {#each workWithUs as item, i}
             <div
-                class="cell-lg md:cell-md border-r-[1px] border-b-[1px] border-work-with-us border-opacity-20">
-                <div class="p-5 m-5">
+                class="border-r-[1px] border-b-[1px] border-work-with-us border-opacity-20 lg:cell-lg md:cell-md sm:cell-sm ">
+                <div class="p-5 m-10 text-xl">
                     {#if i > 0}
-                        <span class="dot mb-[2px]" />
-                        <span class="ml-2">{item}</span>
+                        <span class="dot mt-4" />
+                        <span class="pl-2">{item}</span>
                     {:else}
-                        <span class="text-2xl font-medium">{item}</span>
+                        <span class="text-3xl font-medium">{item}</span>
                     {/if}
                 </div>
             </div>
@@ -49,6 +49,10 @@
     }
 
     .cell-md:nth-child(3n) {
+        border-right-width: 0;
+    }
+
+    .cell-sm:nth-child(2n) {
         border-right-width: 0;
     }
 </style>
