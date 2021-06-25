@@ -1,5 +1,5 @@
 <script lang="ts">
-    const workWithUs = [
+    const workWithUs: string[] = [
         "Why work with us",
         "Diverse Product Range",
         "Dedicated Customer Service",
