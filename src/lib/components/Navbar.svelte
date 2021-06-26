@@ -1,7 +1,6 @@
 <script lang="ts">
     import { link } from "svelte-spa-router";
     import User from "./icons/user.svelte";
-
 </script>
 
 <template>
@@ -25,7 +24,7 @@
                 <a href={"/faqs"} use:link>FAQs</a>
             </div>
             <div class="m-7 text-xl pt-4">
-                <a href={"#"}>Contact Us</a>
+                <a href={"/contact"} use:link>Contact Us</a>
             </div>
             <!-- Update route to show number of notifications -->
             <div class="m-7 pt-5">
