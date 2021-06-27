@@ -1,6 +1,14 @@
 <script lang="ts">
     import { link } from "svelte-spa-router";
     import User from "./icons/user.svelte";
+
+    const menuOptions = [
+        { text: "Home", url: "/home" },
+        { text: "About", url: "/about" },
+        { text: "Products", url: "/products" },
+        { text: "FAQs", url: "/faqs" },
+        { text: "Contact Us", url: "/contact" },
+    ];
 </script>
 
 <template>
@@ -11,21 +19,12 @@
                     <img class="" src="/logo.png" alt="brand logo" />
                 </a>
             </div>
-            <div class="m-7 text-xl pt-4">
-                <a href={"/home"} use:link>Home</a>
-            </div>
-            <div class="m-7 text-xl pt-4">
-                <a href={"/about"} use:link>About</a>
-            </div>
-            <div class="m-7 text-xl pt-4">
-                <a href={"/products"} use:link>Products</a>
-            </div>
-            <div class="m-7 text-xl pt-4">
-                <a href={"/faqs"} use:link>FAQs</a>
-            </div>
-            <div class="m-7 text-xl pt-4">
-                <a href={"/contact"} use:link>Contact Us</a>
-            </div>
+            {#each menuOptions as option}
+                <div
+                    class="m-7 text-xl pt-4 lg:visible sm:invisible md:invisible">
+                    <a href={option.url} use:link>{option.text}</a>
+                </div>
+            {/each}
             <!-- Update route to show number of notifications -->
             <div class="m-7 pt-5">
                 <a href={"/home"} use:link>
