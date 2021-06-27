@@ -54,16 +54,17 @@
                 Bangalore - 560010
             </p>
             <p>+91 80 23300245</p>
+            <p>+91 80 23155031</p>
             <p>puspa@puspagroup.in</p>
         </div>
-        <div class="mt-8 ml-14 text-gray-500">
+        <div class="mt-8 mb-10 ml-14 text-gray-500">
             <p class="text-gray-700 text-xl">Global Specialities:</p>
             <p class="mt-2">
                 25, SSI Area, 5th Cross<br />
                 5th Block, Rajajinagar<br />
                 Bangalore - 560010
             </p>
-            <p>+91 80 23155031</p>
+            <p>+91 80 23408558</p>
             <p>gs@puspagroup.in</p>
         </div>
     </div>
