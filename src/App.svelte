@@ -16,13 +16,18 @@
         "/": Home,
         "/faqs": FAQ,
         "/contact": Contact,
-        "/css": Static,
     };
 </script>
 
 <svelte:head>
     <title>Puspa Group</title>
     <link rel="icon" href="/logo.png" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700"
+        rel="stylesheet" />
 </svelte:head>
 
 <div class="grid grid-rows-[auto, 1fr, auto] min-h-screen">
