@@ -3,6 +3,7 @@
     import ProductCard from "./components/ProductCard.svelte";
     import UpArrow from "./components/icons/up_arrow.svelte";
     import DownArrow from "./components/icons/down_arrow.svelte";
+    import Search from "./components/icons/search.svelte";
 
     import type { Product, ProductResponse } from "./Datatypes.svelte";
     import { each } from "svelte/internal";
@@ -71,51 +72,62 @@
     let searchTerm = "";
 </script>
 
-<div class="pt-40 grid grid-cols-[40%,60%] bg-website-background">
-    <div class="ml-40">
-        <div class="">
-            <input
-                class="border-black border"
-                type="text"
-                placeholder="Search"
-                bind:value={searchTerm} />
-        </div>
-        <div>Companies</div>
-        {#each sources as source}
-            <div>
+<template>
+    <div class="pt-40 grid grid-cols-[40%,50%,10%]">
+        <div class="ml-[25rem] mb-20">
+            <div class="border-gray-400 border-b w-9/12 flex h-10 mb-2">
+                <div class="pt-2.5"><Search /></div>
                 <input
-                    type="checkbox"
-                    bind:group={selectedSources}
-                    value={source} />
-                {source}
+                    class="pl-2"
+                    type="text"
+                    placeholder="Search"
+                    bind:value={searchTerm} />
             </div>
-        {/each}
-        <div>Tags</div>
-        {#each tags as tag}
-            <div>
-                <input type="checkbox" bind:group={selectedTags} value={tag} />
-                {tag}
-            </div>
-        {/each}
-    </div>
-    <div>
-        <div class="flex items-center">
-            <div class="w-10/12 text-3xl"><b>Product List</b></div>
-            <div class="mx-2.5">Sort by:</div>
-            <div>
-                <button on:click={sortAscending}>
-                    <UpArrow />
-                </button>
-            </div>
-            <div>
-                <button on:click={sortDescending}>
-                    <DownArrow />
-                </button>
-            </div>
+            <div class="text-xl mt-4 mb-2">Company</div>
+            {#each sources as source}
+                <div
+                    class="flex items-center text-xl font-light text-gray-600 font-heebo">
+                    <input
+                        type="checkbox"
+                        class="form-checkbox border-[1px] border-gray-300 mr-4 text-main-theme"
+                        bind:group={selectedSources}
+                        value={source} />
+                    <span class="font-jomh">{source}</span>
+                </div>
+            {/each}
+            <div class="text-xl mt-10 mb-2">Tags</div>
+            {#each tags as tag}
+                <div
+                    class="flex items-center text-xl font-light text-gray-600 font-jomh">
+                    <input
+                        type="checkbox"
+                        class="mr-4 text-main-theme form-checkbox border-[1px] border-gray-300"
+                        bind:group={selectedTags}
+                        value={tag} />
+                    {tag}
+                </div>
+            {/each}
         </div>
+        <!-- Update route to show number of notifications -->
         <div>
-            <ProductCard {displayProducts} />
+            <div class="flex items-center">
+                <div class="w-8/12 text-3xl"><b>Product List</b></div>
+                <div class="mx-2.5">Sort by:</div>
+                <div>
+                    <button on:click={sortAscending}>
+                        <UpArrow />
+                    </button>
+                </div>
+                <div>
+                    <button on:click={sortDescending}>
+                        <DownArrow />
+                    </button>
+                </div>
+            </div>
+            <div>
+                <ProductCard {displayProducts} />
+            </div>
         </div>
+        <div />
     </div>
-    <div />
-</div>
+</template>
