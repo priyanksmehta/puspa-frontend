@@ -26,13 +26,13 @@
                 </div>
             {/each}
             <!-- Update route to show number of notifications -->
-            <div class="m-7 pt-5">
+            <div class="m-7 pt-5 lg:visible sm:invisible md:invisible">
                 <a href={"/home"} use:link>
                     <img class="" src="/notification.svg" alt="notif icon" />
                 </a>
             </div>
             <!-- Update route to user account if logged in, login page if not -->
-            <div class="m-7 pt-5">
+            <div class="m-7 pt-5 lg:visible sm:invisible md:invisible ">
                 <a href={"/home"} use:link>
                     <User />
                 </a>
