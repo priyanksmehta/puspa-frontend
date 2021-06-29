@@ -6,7 +6,6 @@
     import Search from "./components/icons/search.svelte";
 
     import type { Product, ProductResponse } from "./Datatypes.svelte";
-    import { each } from "svelte/internal";
 
     let products: Product[] = [],
         sources: string[] = [],
@@ -78,7 +77,7 @@
             <div class="border-gray-400 border-b w-9/12 flex h-10 mb-2">
                 <div class="pt-2.5"><Search /></div>
                 <input
-                    class="pl-2"
+                    class="pl-2 w-full"
                     type="text"
                     placeholder="Search"
                     bind:value={searchTerm} />
