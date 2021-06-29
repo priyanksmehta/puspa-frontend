@@ -74,7 +74,7 @@
 
 <template>
     <div class="pt-40 grid grid-cols-[40%,50%,10%]">
-        <div class="ml-[25rem] mb-20">
+        <div class="ml-64 mb-20">
             <div class="border-gray-400 border-b w-9/12 flex h-10 mb-2">
                 <div class="pt-2.5"><Search /></div>
                 <input
@@ -95,7 +95,7 @@
                     <span class="font-jomh">{source}</span>
                 </div>
             {/each}
-            <div class="text-xl mt-10 mb-2">Tags</div>
+            <div class="text-xl mt-5 mb-2">Tags</div>
             {#each tags as tag}
                 <div
                     class="flex items-center text-xl font-light text-gray-600 font-jomh">
