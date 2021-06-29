@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@sveltejs/vite-plugin-svelte': ^1.0.0-next.7
+  '@tailwindcss/custom-forms': ^0.2.1
   '@typescript-eslint/eslint-plugin': ^4.25.0
   '@typescript-eslint/parser': ^4.25.0
   autoprefixer: ^10.2.5
@@ -22,6 +23,7 @@ dependencies:
 
 devDependencies:
   '@sveltejs/vite-plugin-svelte': 1.0.0-next.10_svelte@3.38.2+vite@2.3.4
+  '@tailwindcss/custom-forms': 0.2.1
   '@typescript-eslint/eslint-plugin': 4.25.0_6fb86b31e39dbd15f93824c03ca6ca0c
   '@typescript-eslint/parser': 4.25.0_eslint@7.27.0+typescript@4.2.4
   autoprefixer: 10.2.5
@@ -130,6 +132,16 @@ packages:
     transitivePeerDependencies:
       - rollup
       - supports-color
+    dev: true
+
+  /@tailwindcss/custom-forms/0.2.1:
+    resolution: {integrity: sha512-XdP5XY6kxo3x5o50mWUyoYWxOPV16baagLoZ5uM41gh6IhXzhz/vJYzqrTb/lN58maGIKlpkxgVsQUNSsbAS3Q==}
+    peerDependencies:
+      tailwindcss: ^1.0
+    dependencies:
+      lodash: 4.17.21
+      mini-svg-data-uri: 1.3.3
+      traverse: 0.6.6
     dev: true
 
   /@types/json-schema/7.0.7:
@@ -1082,6 +1094,11 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
+  /mini-svg-data-uri/1.3.3:
+    resolution: {integrity: sha512-+fA2oRcR1dJI/7ITmeQJDrYWks0wodlOz0pAEhKYJ2IVc1z0AnwJUsKY2fzFmPAM3Jo9J0rBx8JAA9QQSJ5PuA==}
+    hasBin: true
+    dev: true
+
   /minimatch/3.0.4:
     resolution: {integrity: sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==}
     dependencies:
@@ -1557,6 +1574,10 @@ packages:
     engines: {node: '>=8.0'}
     dependencies:
       is-number: 7.0.0
+    dev: true
+
+  /traverse/0.6.6:
+    resolution: {integrity: sha1-y99WD9e5r2MlAv7UD5GMFX6pcTc=}
     dev: true
 
   /tslib/1.14.1:

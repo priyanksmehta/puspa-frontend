@@ -1,5 +1,3 @@
-const { readBuilderProgram } = require("typescript");
-
 module.exports = {
     mode: "jit",
     purge: ["src/**/*.{svelte,ts,js,json,svg}"],
@@ -22,6 +20,10 @@ module.exports = {
                 "flower-pattern":
                     "linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url(patchouli.jpg)",
             },
+            fontFamily: {
+                heebo: ['"Heebo"', '"sans-serif"'],
+                jomh: ["Jomhuria", "cursive"],
+            },
         },
     },
     variants: {
@@ -30,5 +32,6 @@ module.exports = {
     plugins: [
         // require("@tailwindcss/forms"),
         // require("@tailwindcss/typography"),
+        require("@tailwindcss/custom-forms"),
     ],
 };
