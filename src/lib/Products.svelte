@@ -110,7 +110,7 @@
         <!-- Update route to show number of notifications -->
         <div>
             <div class="flex items-center">
-                <div class="w-8/12 text-3xl"><b>Product List</b></div>
+                <div class="w-9/12 text-3xl"><b>Product List</b></div>
                 <div class="mx-2.5">Sort by:</div>
                 <div>
                     <button on:click={sortAscending}>
@@ -123,7 +123,7 @@
                     </button>
                 </div>
             </div>
-            <div>
+            <div class="mb-10">
                 <ProductCard {displayProducts} />
             </div>
         </div>
