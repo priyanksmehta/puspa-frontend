@@ -5,7 +5,6 @@
     import Home from "./lib/components/Home/Home.svelte";
     import Router from "svelte-spa-router";
     import FAQ from "./lib/FAQ.svelte";
-    import Static from "./lib/Static.svelte";
     import Footer from "./lib/components/Footer.svelte";
     import Contact from "./lib/components/Contact Us/Contact.svelte";
 
