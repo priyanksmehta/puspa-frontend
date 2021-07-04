@@ -27,7 +27,7 @@
                 <span class="lg:px-1"><u>MSDS</u></span>
             </div>
             <div
-                class="my-auto bg-cart-button border-1 border-gray-100 lg:ml-10 ml-6 mr-40 md:mr-auto lg:mr-0 px-4 py-2 text-white text-center">
+                class="my-auto bg-cart-button border-1 border-gray-100 lg:ml-10 ml-6 w-32 lg:mr-0 px-4 py-2 text-white text-center">
                 <button>Add to Cart</button>
             </div>
         </div>
