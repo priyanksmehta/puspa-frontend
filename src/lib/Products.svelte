@@ -73,7 +73,7 @@
 
 <template>
     <div
-        class="pt-40 grid lg:grid-cols-[18%,22%,48%,12%] sm:grid-cols-1 md:grid-cols-1">
+        class="lg:pt-40 grid lg:grid-cols-[18%,22%,48%,12%] sm:grid-cols-1 md:grid-cols-1 pt-32">
         <div />
         <div class="mb-20 lg:block hidden">
             <div class="border-gray-400 border-b w-9/12 flex h-10 mb-2">
@@ -127,7 +127,7 @@
                     </button>
                 </div>
             </div>
-            <div class="mb-10 h-[75vh] overflow-y-scroll">
+            <div class="mb-10 lg:h-[75vh] h-[70vh] overflow-y-scroll">
                 <ProductCard {displayProducts} />
             </div>
         </div>
