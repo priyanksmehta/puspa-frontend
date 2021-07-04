@@ -127,7 +127,7 @@
                     </button>
                 </div>
             </div>
-            <div class="mb-10 h-[60vh] overflow-y-scroll">
+            <div class="mb-10 h-[75vh] overflow-y-scroll">
                 <ProductCard {displayProducts} />
             </div>
         </div>
