@@ -5,23 +5,25 @@
 <div class="grid grid-cols-1 lg:grid-cols-[20%,40%,20%,20%]">
     <div />
     <div>
-        <div class="mt-40 text-3xl">Contact</div>
+        <div class="mt-40 text-3xl ml-2 lg:ml-0">Contact</div>
         <div class="grid grid-rows-[auto,auto,1fr, auto]">
-            <div class="grid grid-cols-1 lg:flex">
-                <span class="border-[1px] mr-8 mt-4 lg:mt-8 lg:w-6/12 w-full">
+            <div class="grid grid-cols-1 lg:flex w-full">
+                <span
+                    class="border-[1px] lg:mr-8 lg:ml-0 mt-4 lg:mt-8 lg:w-6/12 mx-2">
                     <input
                         class="p-2 w-full"
                         type="text"
                         placeholder="Full Name" />
                 </span>
-                <span class="border-[1px] mt-2 lg:mt-8 lg:w-6/12 w-full">
+                <span class="border-[1px] mt-2 lg:mt-8 lg:w-6/12 mx-2 lg:mx-0">
                     <input
                         class="p-2 w-full"
                         type="text"
                         placeholder="Contact No." />
                 </span>
             </div>
-            <div class="grid grid-cols-1 lg:flex lg:mt-4 gap-y-2 mt-2">
+            <div
+                class="grid grid-cols-1 lg:flex lg:mt-4 gap-y-2 mt-2 lg:mx-0 mx-2">
                 <div class="border-[1px] lg:mr-8 lg:w-1/2">
                     <input
                         class="p-2 w-full"
@@ -35,12 +37,12 @@
                         placeholder="Subject" />
                 </div>
             </div>
-            <div class="flex mt-2 lg:mt-4 border-[1px] h-32">
+            <div class="flex mt-2 lg:mt-4 border-[1px] h-32 lg:mx-0 mx-2">
                 <textarea
                     class="resize-none w-full px-2"
                     placeholder="Message" />
             </div>
-            <div class="mt-4 float-right text-right">
+            <div class="mt-4 float-right text-right lg:mr-0 mr-2">
                 <button class="bg-cart-button text-white px-10 py-2"
                     >Submit</button>
             </div>
