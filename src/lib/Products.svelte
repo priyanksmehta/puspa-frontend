@@ -111,8 +111,8 @@
         </div>
         <!-- Update route to show number of notifications -->
         <div>
-            <div class="grid grid-cols-1 lg:grid-cols-3 items-center w-full">
-                <div class="lg:w-[68%] text-3xl text-center lg:float-left">
+            <div class="grid grid-cols-1 lg:flex items-center w-full">
+                <div class="lg:w-[68%] text-3xl text-center lg:text-left">
                     <b>Product List</b>
                 </div>
                 <div class="mx-2.5 hidden lg:block">Sort by:</div>
