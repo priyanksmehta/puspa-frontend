@@ -49,7 +49,7 @@
         </div>
     </div>
     <div>
-        <div class="mt-56 lg:ml-14 ml-4 text-2xl">Locate Us</div>
+        <div class="lg:mt-56 mt-20 lg:ml-14 ml-4 text-2xl">Locate Us</div>
         <div class="mt-8 lg:ml-14 ml-4 text-gray-500">
             <p class="text-gray-700 text-xl">Corporate Office:</p>
             <p class="mt-2">
