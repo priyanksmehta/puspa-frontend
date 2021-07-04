@@ -90,7 +90,7 @@
                     class="flex items-center text-xl font-light text-gray-600 font-heebo">
                     <input
                         type="checkbox"
-                        class="form-checkbox border-[1px] border-gray-300 mr-4 text-main-theme"
+                        class="form-checkbox border-[1px] border-gray-300 mr-4 text-main-theme cursor-pointer"
                         bind:group={selectedSources}
                         value={source} />
                     <span class="">{source}</span>
@@ -102,7 +102,7 @@
                     class="flex items-center text-xl font-light text-gray-600 font-heebo">
                     <input
                         type="checkbox"
-                        class="mr-4 text-main-theme form-checkbox border-[1px] border-gray-300"
+                        class="mr-4 text-main-theme form-checkbox border-[1px] border-gray-300 cursor-pointer"
                         bind:group={selectedTags}
                         value={tag} />
                     {tag}
