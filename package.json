@@ -24,6 +24,7 @@
     "vite": "^2.3.4"
   },
   "dependencies": {
+    "cypress": "^7.6.0",
     "svelte-seo": "^1.2.1"
   }
 }
