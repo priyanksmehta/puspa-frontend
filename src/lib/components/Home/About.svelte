@@ -2,14 +2,15 @@
     import { link } from "svelte-spa-router";
 </script>
 
-<div class="grid grid-cols-[auto,1fr] items-center my-10">
-    <div class="relative inline-block ml-40 m-3 overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-[auto,1fr] items-center my-10">
+    <div
+        class="relative inline-block lg:ml-40 lg:m-3 mx-10 mb-10 overflow-hidden">
         <img
             class="block duration-500 ease-in-out transform hover:scale-125"
             src="/about_us.png"
             alt="about" />
     </div>
-    <div class="px-10  overflow-x-auto mr-40">
+    <div class="px-10  overflow-x-auto lg:mr-40">
         <div class="text-4xl">
             The Puspa Group was established in Kolkata in the year 1956 as an
             agarbatti manufacturing company, and within a short span
