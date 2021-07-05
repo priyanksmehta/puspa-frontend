@@ -1,5 +1,6 @@
 <script lang="ts">
     import type { SignupResponse } from "../../Datatypes.svelte";
+    import { push } from "svelte-spa-router";
 
     let company: string = "",
         email: string = "",
@@ -34,6 +35,7 @@
         userRegistration = await registerUser();
         if (userRegistration.status) {
             alert(userRegistration.message);
+            push("/products");
         } else {
             alert(userRegistration.error);
         }
