@@ -1,6 +1,7 @@
-<div class="container relative pt-20 max-w-full">
-    <img src="/banner_about.png" alt="about banner" />
-    <div class="absolute top-[90%] left-[10%] text-5xl text-white">
+<div class="container relative max-w-full lg:pt-20">
+    <img class="mt-28 lg:mt-0" src="/banner_about.png" alt="about banner" />
+    <div
+        class="absolute text-white lg:top-[90%] lg:left-[8.7%] top-[80%] left-[7%] text-4xl lg:text-5xl">
         About Us
     </div>
 </div>
