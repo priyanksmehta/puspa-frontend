@@ -1,11 +1,11 @@
 <script lang="ts">
     import { onMount } from "svelte";
-    import ProductCard from "./components/ProductCard.svelte";
-    import UpArrow from "./components/icons/up_arrow.svelte";
-    import DownArrow from "./components/icons/down_arrow.svelte";
-    import Search from "./components/icons/search.svelte";
+    import ProductCard from "./ProductCard.svelte";
+    import UpArrow from "../icons/up_arrow.svelte";
+    import DownArrow from "../icons/down_arrow.svelte";
+    import Search from "../icons/search.svelte";
 
-    import type { Product, ProductResponse } from "./Datatypes.svelte";
+    import type { Product, ProductResponse } from "../../Datatypes.svelte";
 
     let products: Product[] = [],
         sources: string[] = [],

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { Product } from "../Datatypes.svelte";
+    import type { Product } from "../../Datatypes.svelte";
     export let displayProducts: Product[];
 </script>
 
