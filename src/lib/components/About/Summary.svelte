@@ -6,15 +6,15 @@
     }
 </script>
 
-<div class="grid grid-cols-1 lg:grid-cols-[auto,1fr] my-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 my-10">
     <div
-        class="lg:ml-40 mx-auto relative inline-block overflow-hidden lg:w-full">
+        class="lg:mx-auto md:mx-10 mx-4 relative inline-block overflow-hidden lg:w-full md:my-auto">
         <img
-            class="block duration-500 ease-in-out transform hover:scale-125"
+            class="block duration-500 ease-in-out transform hover:scale-125 md:mx-auto"
             src="about_us_summary.png"
             alt="summary" />
     </div>
-    <div class="px-10 lg:mr-40">
+    <div class="md:px-10 lg:mx-auto md:my-auto mx-4">
         <div class="lg:text-4xl text-2xl mt-10">
             The Puspa Group was established in Kolkata in the year 1956 as an
             Agarbatti manufacturing company and within a short span, conquered
