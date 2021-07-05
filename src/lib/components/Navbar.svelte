@@ -32,7 +32,7 @@
             </div>
             <!-- Update route to user account if logged in, login page if not -->
             <div class="m-7 pt-5 lg:visible invisible ">
-                <a href={"/home"} use:link>
+                <a href={"/register"} use:link>
                     <User />
                 </a>
             </div>

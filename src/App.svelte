@@ -7,6 +7,7 @@
     import FAQ from "./lib/components/FAQs/FAQ.svelte";
     import Footer from "./lib/components/Footer.svelte";
     import Contact from "./lib/components/Contact Us/Contact.svelte";
+    import Register from "./lib/components/Auth/Register.svelte";
 
     const routes = {
         "/products": Products,
@@ -15,6 +16,7 @@
         "/": Home,
         "/faqs": FAQ,
         "/contact": Contact,
+        "/register": Register,
     };
 </script>
 
