@@ -12,4 +12,10 @@
         logo: string;
     }
 
+    export interface SignupResponse {
+        status: boolean;
+        message?: string;
+        token?: string;
+        error?: string;
+    }
 </script>
