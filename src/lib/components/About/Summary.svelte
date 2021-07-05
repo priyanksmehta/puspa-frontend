@@ -6,20 +6,21 @@
     }
 </script>
 
-<div class="lg:grid lg:grid-cols-[auto,1fr] my-10">
-    <div class="ml-40 m-3 relative inline-block overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-[auto,1fr] my-10">
+    <div
+        class="lg:ml-40 mx-auto relative inline-block overflow-hidden lg:w-full">
         <img
             class="block duration-500 ease-in-out transform hover:scale-125"
             src="about_us_summary.png"
             alt="summary" />
     </div>
-    <div class="px-10 mr-40">
-        <div class="text-4xl mt-10">
+    <div class="px-10 lg:mr-40">
+        <div class="lg:text-4xl text-2xl mt-10">
             The Puspa Group was established in Kolkata in the year 1956 as an
             Agarbatti manufacturing company and within a short span, conquered
             many markets across India.
         </div>
-        <div class="mt-10">
+        <div class="mt-10 lg:text-lg text-base">
             In 1960, it established it manufacturing hub in Bangalore, the
             capital of the Indian Agarbatti Industry. In the year 1969, it
             launched its flagship brand, Green Champa, which has been a market
