@@ -117,3 +117,20 @@
         {/if}
     {/each}
 </div>
+
+<div class="grid grid-cols-1 items-center lg:hidden mb-5">
+    {#each companyData as company}
+        <div class="md:m-10">
+            <img src={company.image} alt="alt companies" />
+        </div>
+        <div class="md:ml-10 ml-4 my-4">
+            <div class="md:text-4xl text-2xl">
+                {company.company}
+            </div>
+            <div class="md:text-2xl text-lg">
+                {company.tagline}
+            </div>
+            <div class="md:mr-10 mr-4 md:text-base text-sm">{company.bio}</div>
+        </div>
+    {/each}
+</div>
