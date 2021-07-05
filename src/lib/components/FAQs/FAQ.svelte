@@ -4,7 +4,6 @@
     function toggleSelect() {
         selected !== 1 ? (selected = 1) : (selected = 0);
     }
-
 </script>
 
 <template>
