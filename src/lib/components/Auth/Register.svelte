@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type SignupResponse from "../../Datatypes.svelte";
+    import type { SignupResponse } from "../../Datatypes.svelte";
 
     let company: string = "",
         email: string = "",
@@ -7,9 +7,9 @@
         confirm: string = "",
         gst: string = "";
 
-    let userRegistration: SignupResponse;
+    let userRegistration: SignupResponse = { status: false };
 
-    const registerUser = async () => {
+    const registerUser = async (): Promise<SignupResponse> => {
         let response = await fetch("http://localhost:5000/api/auth/signup", {
             method: "POST",
             body: JSON.stringify({
@@ -22,17 +22,21 @@
                 "Content-Type": "application/json",
             },
         });
-        const signupResponse = await response.json();
-        if (signupResponse.status) {
+        const signupResponse: SignupResponse = await response.json();
+        if (response.status) {
             return signupResponse;
         } else {
             throw new Error(signupResponse.error);
         }
     };
 
-    const handleSubmit = () => {
-        userRegistration = registerUser();
-        console.log(userRegistration);
+    const handleSubmit = async () => {
+        userRegistration = await registerUser();
+        if (userRegistration.status) {
+            alert(userRegistration.message);
+        } else {
+            alert(userRegistration.error);
+        }
     };
 </script>
 
