@@ -21,7 +21,7 @@
             many markets across India.
         </div>
         <div class="mt-10 lg:text-lg text-base">
-            In 1960, it established it manufacturing hub in Bangalore, the
+            In 1960, it established its manufacturing hub in Bangalore, the
             capital of the Indian Agarbatti Industry. In the year 1969, it
             launched its flagship brand, Green Champa, which has been a market
             leader and a household name for the past 50 years.In the year 1975
@@ -50,7 +50,7 @@
                     fragrance raw materials in India, and is a reliable source
                     for top quality ingredients from across the globe. It is a
                     major vendor to the Paan Masala, Chewing Tobacco, Agarbatti,
-                    Soaps, Detergents, and Frangrances and Flvaor industries.
+                    Soaps, Detergents, and Fragrances and Flavor industries.
                 </p>
             </div>
             <div class="mt-4">
